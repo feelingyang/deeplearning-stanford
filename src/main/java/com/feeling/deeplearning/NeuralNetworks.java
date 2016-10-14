@@ -226,7 +226,6 @@ public class NeuralNetworks {
 			for (int i = 0; i < activationLayerNum[layerNum - 1]; i++) {
 				_D[k][layerNum - 1][i] = (_A[k][layerNum - 1][i] - _Y[k][i])
 						* fastSigmoidDerivative(_A[k][layerNum - 1][i]);
-				;
 			}
 			for (int l = layerNum - 2; l > 0; l--) {
 				for (int i = 0; i < activationLayerNum[l]; i++) {
@@ -250,7 +249,6 @@ public class NeuralNetworks {
 		for (int l = 0; l < layerNum - 1; l++) {
 			for (int i = 0; i < activationLayerNum[l + 1]; i++) {
 				for (int j = 0; j < activationLayerNum[l]; j++) {
-
 					sumWeightDecay += Math.pow(_W[l][i][j], 2);
 				}
 			}
