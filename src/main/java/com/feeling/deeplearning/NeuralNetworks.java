@@ -29,7 +29,7 @@ public class NeuralNetworks {
 	private double overallCost = Double.MAX_VALUE;
 
 	/**
-	 * traingingSetInput
+	 * traingingSetOutput
 	 */
 	private double[][] _Y;
 
